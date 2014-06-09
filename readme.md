@@ -27,11 +27,3 @@ These versions are all fairly closely equivalent, just updated to cope with chan
 * **SBT v0.13** - use plugin **v1.5**
 
 The plugin is published to the main SBT plugin repository, so no further configuration should be necessary. 
-
-
-Known Limitations
-=================
-
-Sbt only reports that a test has been run when it completes. So this plugin has to
-tell TeamCity at that point that the test has both started and finished: this means
-TeamCity thinks that all your tests run *really* fast! Do not be misled...
