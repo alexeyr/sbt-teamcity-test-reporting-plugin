@@ -64,7 +64,7 @@ class TeamCityTestListener extends TestReportListener {
             println(s"Test:$testName was cancelled")
         }
 
-        teamcityReport("testFinished", "name" -> testName)
+        teamcityReport("testFinished", "name" -> testName, "duration" -> e.duration.toString)
       }
     }
   }
